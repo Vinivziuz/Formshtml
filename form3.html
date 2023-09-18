@@ -1,19 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt br">
-    <head>
-        <title>Formularios</title>
-            <font size="7" face = "Candara" color = "#F0F3F3">
-                <p style="text-align: center;"><b>Formularios</b></p>
-            </font>
-    </head>
+
+<head>
+    <link href="div.css" rel="stylesheet" type="text/css" />
+    <title>Formularios</title>
+    <font size="7" face="Candara" color="#F0F3F3">
+        <div class="pesq">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Pesquisa IBGE</b>
+        </div>
+    </font>
+</head>
 <style>
-        body {
-          background-image: url("img/bg3.png");
-          background-attachment: fixed;  
-          background-size: cover;
-        }
-        </style>
-        
-        
-    </body>
+    body {
+        background-image: url("img/bg3.png");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<br><br><br><br><br><br><br><br><br><br>
+<div class="pesq">
+    <font size="4" face="Candara" color="black">
+        <fieldset>
+            <legend>Participe da nossa pesquisa!</legend>
+            <form name="pesquisa">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Pode ser anonimo" autocomplete="off"
+                        maxlength="20" size="20">
+                    <br><br>
+                    <label for="ocp">Ocupação:</label>
+                    <input type="text" name="ocp" id="ocp" placeholder="Ex.: Lixeiro" autocomplete="off" size="20" required="" />
+                    <br><br>
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" name="idade" id="idade" autocomplete="off" required="" />
+                    <br><br>
+                    <label for="cbc">Quantas pessoas habitam sua casa?</label><Br>
+                    <input type="number" name="cbc" id="cbc" size="10" required="" /><br><br>
+                    <label for="stts">Estado Civil:</label>
+                    <select>
+                        <option value="">-Selecione-</option>
+                        <option value="C">Casado</option>
+                        <option value="S">Solteiro</option>
+                        <option value="R">A procura de Romance</option>
+                        <option value="V">Viúvo</option>
+                    </select>
+                    <br><br>
+                    <label for="result">Qual desses lugares mais te remete a sua família?</label><br><br>
+                    <select>
+                        <option value="">-Selecione-</option>
+                        <option value="TE">Torre Eiffel</option>
+                        <option value="EL">Estátua da Liberdade</option>
+                        <option value="VT">Vietnã</option>
+                        <option value="BC">Beto Carreiro</option>
+                        <option value="RS">Rússia</option>
+                        <option value="AS">Anéis de Saturno</option>
+                        <option value="TTD">Tão Tão Distante</option>
+                        <option value="IR">Iraque</option>
+                        <option value="MV">Mar Vermelho</option>
+                        <option value="N">Nicarágua</option>
+                        <option value="GL">Grand Line</option>
+                        <option value="IF">IF Goiano</option>
+                    </select>
+                </p>
+                <label for="fml">Em uma escala de 0 a 100, quão satisfeito <br> com sua família você está?</label><br>
+                <input type="range" min="0" max="100"><br>
+                <p align="center">
+                    <input type="submit" name="Enviar" value="Enviar">
+                    <input type="reset" name="Recomeçar" value="Recomeçar">
+                </p>
+
+            </form>
+        </fieldset>
+</div>
+<div class="center" id="left">
+    <br>
+    <a href="index.html"><img src="img/voltar.png" height="100">
+    </a>
+</div>
+</body>
+
 </html>

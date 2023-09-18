@@ -20,9 +20,7 @@
         <br><br><br><br>
         <fieldset>
             <form name="report">
-                <b>
-                    <legend>Report:</legend>
-                </b>
+                <legend>Report:</legend>
                 <p>
                     <b><label for="nick">Nome do Jogador:</label></b>
                     <input type="text" id="nick" name="nick" placeholder="Nickname" autocomplete="off" maxlength="16"
@@ -40,12 +38,30 @@
                         <option value="HK">Trapaça</option>
                     </select>
                 </p>
+                <p>
+                    <b><label for="data">Data da partida:</label></b>
+                    <input type="date" id="data" name="data" required="" />
+                </p><br>
+                <fieldset>
+                    <legend>Descrição:</legend>
+                    <p>
+                        <b><label for="texto">Descreva o ocorrido:</label></b><br>
+                        <textarea type="text" id="texto" name="texto" placeholder="Quanto mais detalhe, melhor!"
+                            rows="4" required="" cols="40"></textarea>
+                    </p>
+                    <p>
+                        <B><label for="img">Provas e prints:</label></B><bR>
+                        <input type="file" name="img" id="img">
+                    </p>
+                </fieldset>
+                <p align="center">
+                    <input type="submit" name="Enviar" value="Enviar">
+                </p>
             </form>
         </fieldset>
-    </div>
-
-
-    <div class="center">
+    </div> <br> <br>
+    <div class="center" id="left">
+        <img src="img/udyrsasuke.gif"><br> <br> <br> <br> <br>
         <a href="index.html"><img src="img/voltar.png" height="100">
         </a>
     </div>
