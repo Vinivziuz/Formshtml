@@ -1,19 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt br">
-    <head>
-        <title>Formularios</title>
-            <font size="7" face = "Candara" color = "#F0F3F3">
-                <p style="text-align: center;"><b>Formularios</b></p>
-            </font>
-    </head>
-<style>
-        body {
-          background-image: url("img/bg4.png");
-          background-attachment: fixed;  
-          background-size: cover;
-        }
-        </style>
-        
-        
-    </body>
+
+<head>
+    <link href="div.css" rel="stylesheet" type="text/css" />
+    <title>Pet Paradise</title>
+</head>
+
+<body background="img/bg4.png">
+    <font face="Candara" size="3" color="white">
+        <br><br><br><br><br><br><br><br>
+        <div class="center">
+            <fieldset>
+                <form name="feedback">
+                    <legend>Nos dê sua opnião!</legend>
+                    <p>
+                        <label for="nome">Qual o seu nome:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off"
+                            maxlength="20" size="30" required="" />
+                        <br>
+                        <label for="cidade">Em qual cidade você foi atendido?</label>
+                        <br>
+                        <select id="cidade" name="cidade">
+                            <option value="">-Selecione-</option>
+                            <option value="FI">Foz do Iguaçu</option>
+                            <option value="CB">Cuiabá</option>
+                            <option value="CU">Curitiba</option>
+                            <option value="NT">Natal</option>
+                            <option value="RC">Recife</option>
+                            <option value="BL">Belém</option>
+                            <option value="FR">Florianópolis</option>
+                            <option value="GR">Gramado</option>
+                            <option value="OZ">Orizona</option>
+                        </select><br>
+                    </p>
+                    <fieldset>
+                        <p>
+                            <label for="animal">Pra qual animalzinho você comprou esse produto?</label><br>
+                            <select id="animal" name="animal">
+                                <option value="">-Selecione-</option>
+                                <option value="CC">Cachorro</option>
+                                <option value="GT">Gato</option>
+                                <option value="TC">Tucano</option>
+                                <option value="CV">Cavalo</option>
+                                <option value="PP">Paraguaio</option>
+                                <option value="CB">Cobra</option>
+                                <option value="CL">Coelho</option>
+                                <option value="LG">Lobo Guará</option>
+                                <option value="HM">Hamster</option>
+                                <option value="TL">Tilápia</option>
+                                <option value="GR">Gorila</option>
+                                <option value="FR">Furão</option>
+                                <option value="TB">Tamanduá Bandeira</option>
+                                <option value="BR">Bufo Regularis</option>
+                                <option value="OR">Orangotango</option>
+                                <option value="CP">Capivara</option>
+                                <option value="TT">Tatupeba</option>
+                            </select><br>
+                            <label for="produto">Qual produto foi comprado?</label><br>
+                            <input type="text" id="produto" name="produto"
+                                placeholder="De preferência cite a marca do produto" autocomplete="off" maxlength="70"
+                                size="70" required="" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <label for="nota">Qual nota daria a esse produto?</label><br>
+                        <input type="radio" value="1" name="1star">
+                        <img src="img/1star.png" width="80"><br>
+                        <input type="radio" value="2" name="1star">
+                        <img src="img/2star.png" width="80"><br>
+                        <input type="radio" value="3" name="1star">
+                        <img src="img/3star.png" width="80"><br>
+                        <input type="radio" value="4" name="1star">
+                        <img src="img/4star.png" width="80"><br>
+                        <input type="radio" value="5" name="1star">
+                        <img src="img/5star.png" width="80"><br>
+                        <label for="coment">Porque deu essa nota?</label><br>
+                        <textarea type="text" id="coment" name="coment" rows="3" cols="70"
+                            placeholder="Nos dê sua opnião" autocomplete="off" required="" /></textarea>
+                    </p>
+                    <p align="center">
+                        <input type="submit" name="Enviar" value="Enviar">
+                        <input type="reset" name="Recomeçar" value="Recomeçar">
+                    </p>
+                </form>
+            </fieldset>
+        </div>
+        <h3>
+            Animais atendidos:</h3>
+        <img src="img/cavalo.gif" width="200">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="img/cat.gif" width="200">
+        <br><br>
+        <img src="img/dog.gif" width="200">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="img/bird.gif" width="200">
+        <div class="center">
+            <a href="index.html"><img src="img/voltarwhite.png" height="70">
+            </a>
+        </div>
+    </font>
+</body>
+
 </html>

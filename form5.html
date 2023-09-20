@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt br">
-    <head>
-        <title>Formularios</title>
-            <font size="7" face = "Candara" color = "#F0F3F3">
-                <p style="text-align: center;"><b>Formularios</b></p>
-            </font>
-    </head>
-<style>
-        body {
-          background-image: url("img/bg5.png");
-          background-attachment: fixed;  
-          background-size: cover;
-        }
-        </style>
-        
-        
-    </body>
+
+<head>
+    <link href="div.css" rel="stylesheet" type="text/css" />
+    <title> > Amazonia < </title>
+</head>
+
+<body>
+    <font face="Candara" size="4" color="black">
+        <br><br>
+        <div class="pesq">
+            <h1>Finalizar a compra(1 item):</h1>
+            <form name="entrega">
+                <fieldset>
+                    <legend>Endereço da entrega:</legend>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="CEP" autocomplete="off" maxlength="15" size="25"
+                        required="" /><br><br>
+                    <label for="end">Endereço:</label>
+                    <input type="text" id="end" name="end" placeholder="Ex.: Rua Marechal Ronaldo N.35" autocomplete="off" maxlength="40" size="50"
+                        required="" />&nbsp;&nbsp;
+                        <label for="brr">Bairro:</label>
+                        <input type="text" id="brr" name="brr" placeholder="Ex.: Centro" autocomplete="off" maxlength="25" size="25"
+                        required="" /><Br>
+                        <label for="cmp">Complemento (Opcional):</label>
+                        <input type="text" id="cmp" name="cmp" placeholder="Ex.: Apt. 205" autocomplete="off" maxlength="25" size="25"><Br><br>
+                            <label for="nmr">Número para contato:</label>
+                        <input type="text" id="nmr" name="nmr" placeholder="Ex.: 064999123456" autocomplete="off" maxlength="25" size="25">
+                </fieldset>
+                <fieldset>
+                    <legend>Método de pagamento:</legend>
+                    <input type="radio" value="1"> <img src="img/pix.png" height="20"> &nbsp; Pix: O código Pix
+                    gerado para o pagamento é válido por 30 minutos após a finalização do pedido.<br>
+                    <input type="radio" value="1"> <img src="img/creditcard.png" height="20"> &nbsp; Cartão de
+                    Crédito: A Amazon aceita várias bandeiras de cartão de crédito. <br>
+                    <input type="radio" value="1"> <img src="img/codigobarras.png" height="20"> &nbsp; Boleto:
+                    Vencimento em 1 dia útil. A data de entrega será alterada devido ao tempo de processamento
+                    do Boleto.<br>
+                    <br>
+                    <label for="codigo">Código de desconto:</label><br>
+                    <input type="text" id="codigo" name="codigo" placeholder="Ex.:Amzn10" autocomplete="off"
+                        maxlength="15" size="25" required="" />
+                </fieldset>
+                <p align="center">
+                    <input type="submit" name="Pagamento>>" value="Pagamento>>">
+                </p>
+            </form>
+        </div>
+    </font>
+</body>
+
 </html>
