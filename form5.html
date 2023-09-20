@@ -6,14 +6,14 @@
     <title> > Amazonia < </title>
 </head>
 
-<body>
+<body background="img/bg5.png">
     <font face="Candara" size="4" color="black">
-        <br><br>
+        <br><br><br>
         <div class="pesq">
             <h1>Finalizar a compra(1 item):</h1>
-            <form name="entrega">
+            <form name="entrega" data-netlify="true">
                 <fieldset>
-                    <legend>Endereço da entrega:</legend>
+                    <legend>Endereço da entrega:</legend><br>
                     <label for="cep">CEP:</label>
                     <input type="text" id="cep" name="cep" placeholder="CEP" autocomplete="off" maxlength="15" size="25"
                         required="" /><br><br>
@@ -27,9 +27,9 @@
                         <input type="text" id="cmp" name="cmp" placeholder="Ex.: Apt. 205" autocomplete="off" maxlength="25" size="25"><Br><br>
                             <label for="nmr">Número para contato:</label>
                         <input type="text" id="nmr" name="nmr" placeholder="Ex.: 064999123456" autocomplete="off" maxlength="25" size="25">
-                </fieldset>
+                </fieldset><br>
                 <fieldset>
-                    <legend>Método de pagamento:</legend>
+                    <legend>Método de pagamento:</legend><br>
                     <input type="radio" value="1"> <img src="img/pix.png" height="20"> &nbsp; Pix: O código Pix
                     gerado para o pagamento é válido por 30 minutos após a finalização do pedido.<br>
                     <input type="radio" value="1"> <img src="img/creditcard.png" height="20"> &nbsp; Cartão de
@@ -37,7 +37,7 @@
                     <input type="radio" value="1"> <img src="img/codigobarras.png" height="20"> &nbsp; Boleto:
                     Vencimento em 1 dia útil. A data de entrega será alterada devido ao tempo de processamento
                     do Boleto.<br>
-                    <br>
+                    <br><br>
                     <label for="codigo">Código de desconto:</label><br>
                     <input type="text" id="codigo" name="codigo" placeholder="Ex.:Amzn10" autocomplete="off"
                         maxlength="15" size="25" required="" />
@@ -48,6 +48,9 @@
             </form>
         </div>
     </font>
+    <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html"><img src="img/voltar.png" height="70">
+        </a>
 </body>
 
 </html>
